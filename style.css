@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #e00000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Vivaldi, cursive;
+}
+
+main {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+p {
+  margin-top: 24px;
+  font-size: 1.3rem;
+  opacity: 1.65;
+  letter-spacing: 0.05em;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1.65;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  transition: letter-spacing 0.25s ease, transform 0.25s ease;
+}
+
+h1:hover {
+  letter-spacing: 0.08em;
+  transform: translateY(-2px);
+  cursor: default;
+}
+
+.quiet-link {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  letter-spacing: 0.08em;
+  transition: opacity 0.2s ease;
+}
+
+.quiet-link:hover {
+  opacity: 0.7;
+}
+
+
